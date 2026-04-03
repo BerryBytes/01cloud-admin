@@ -1,0 +1,15 @@
+.userInfoLink {
+  text-decoration: none;
+  color: #8891f9 !important;
+}
+
+.activeClass {
+  color: green !important;
+}
+
+.inactiveClass {
+  color: red !important;
+}
+.m-b-20{
+  margin-bottom: 20px!important;
+}

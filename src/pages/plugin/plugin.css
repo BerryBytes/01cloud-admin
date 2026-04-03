@@ -1,0 +1,13 @@
+.search-plugin {
+  display: inline !important;
+}
+.create-plugin-link {
+  text-decoration: none;
+}
+
+.plugin-search-add {
+  margin-bottom: 1.5rem;
+}
+.w60{
+  width:60%;
+}

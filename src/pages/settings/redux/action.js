@@ -1,0 +1,26 @@
+const SETTING_PREFIX = "@SETTING";
+
+export const FETCH_EMAIL_TEMPLATE = `${SETTING_PREFIX}/FETCH_EMAIL_TEMPLATE`;
+export const FETCH_EMAIL_TEMPLATE_SUCCESS = `${SETTING_PREFIX}/FETCH_EMAIL_TEMPLATE_SUCCESS`;
+export const FETCH_EMAIL_TEMPLATE_FAILURE = `${SETTING_PREFIX}/FETCH_EMAIL_TEMPLATE_FAILURE`;
+export const FETCH_EMAIL_CONTENT = `${SETTING_PREFIX}/FETCH_EMAIL_CONTENT`;
+export const FETCH_EMAIL_CONTENT_SUCCESS = `${SETTING_PREFIX}/FETCH_EMAIL_CONTENT_SUCCESS`;
+export const UPDATE_EMAIL_CONTENT = `${SETTING_PREFIX}/UPDATE_EMAIL_CONTENT`;
+export const UPDATE_EMAIL_CONTENT_SUCCESS = `${SETTING_PREFIX}/UPDATE_EMAIL_CONTENT_SUCCESS`;
+export const UPDATE_EMAIL_CONTENT_FAILURE = `${SETTING_PREFIX}/UPDATE_EMAIL_CONTENT_FAILURE`;
+
+const fetchEmailTemplates = () =>({
+    type: FETCH_EMAIL_TEMPLATE
+})
+
+ const fetchEmailContent = (email) =>({
+    type: FETCH_EMAIL_CONTENT,
+    payload: {email}
+})
+
+const updateEmailContent = (title, email) => ({
+    type: UPDATE_EMAIL_CONTENT,
+    payload: {title, email}
+})
+
+export {fetchEmailTemplates, fetchEmailContent, updateEmailContent};

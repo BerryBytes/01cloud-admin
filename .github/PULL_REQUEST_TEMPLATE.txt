@@ -1,0 +1,34 @@
+# Pull Request
+
+<!--
+## Note to the Contributor
+
+We encourage contributors to go through a proposal process to discuss major changes.
+Before your PR is allowed to run through CI, the maintainers of Talos will first have to approve the PR.
+-->
+
+### Ticket(s)
+- https://01cloud.atlassian.net/browse/ZRO-xxx
+
+## What? (description)
+
+
+## Why? (reasoning)
+
+
+## Acceptance
+
+Please use the following checklist:
+
+- [ ] you linked an issue (if applicable)
+- [ ] you included tests (if applicable)
+- [ ] you formatted your code
+- [ ] you linted your code
+- [ ] Documentation is updated (if necessary)
+- [ ] you ran unit-tests
+
+
+## Note
+
+* Be kind to code reviewers, please try to keep pull requests as small and focused as possible :)
+* When your merge PR, ensure to delete the branch.

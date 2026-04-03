@@ -1,0 +1,271 @@
+.step {
+  margin-top: 15px;
+  margin-left: 8%;
+  position: relative;
+  min-height: 3em;
+  color: gray;
+}
+.step + .step {
+  margin-top: 2.5em
+}
+.step > div:first-child {
+  position: static;
+  height: 0;
+}
+.step > div:not(:first-child) {
+  margin-left: 2.5em;
+  padding-left: 1em;
+}
+.step.step-active {
+  color: #4285f4
+}
+.step.step-active .circle {
+  background-color: #4285f4;
+}
+.iconSizeWidth {
+  width: 24px;
+}
+
+/* Circle */
+.circle {
+  position: relative;
+  /* background: gray;
+  width: 2.5em;
+  height: 2.5em;
+  line-height: 2.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff; */
+}
+
+/* .running-circle {
+  text-align: center;
+  position: relative;
+  background: gray;
+  width: 24px;
+  height: 24px;
+  line-height: 2.5em;
+  border-radius: 100%;
+  color: #fff;
+  text-align: center;
+  box-shadow: 0 0 0 3px #fff;
+} */
+/* 
+.rotate {
+  animation: rotation 2s infinite linear;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+} */
+
+/* Vertical Line */
+/* .running-circle:after, */
+.circle:after {
+  content: ' ';
+  position: absolute;
+  display: block;
+  top: -7px;
+  /* right: 50%; */
+  bottom: 1px;
+  left: 48%;
+  height: 100%;
+  width: 1px;
+  transform: scale(1, 2);
+  transform-origin: 50% -100%;
+  background-color: rgba(0, 0, 0, 0.25);
+}
+
+.step:last-child .circle:after {
+  display: none
+}
+.time{
+  margin-right:20px;
+}
+
+/* Stepper Titles */
+.title {
+  line-height: 1.5em;
+  
+  display: inline-block;
+}
+.commitmsg{
+  margin-top: 5px;
+  font-size: 18px;
+  color: #357dfd;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+.lds-ring {
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  margin: 8px;
+  border: 2px solid white;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: white transparent transparent transparent;
+}
+.running div{
+  border: 2px solid #f5c60b;
+  border-color: #f5c60b transparent transparent transparent;
+
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.lds1-ring {
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -24px;
+}
+
+.lds1-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  margin: 6px;
+  border: 1.5px solid white;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: white transparent transparent transparent;
+}
+
+.lds1-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds1-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds1-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds1-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.center{
+  text-align: center;
+}
+
+.stick-right {
+  margin-left: auto !important;
+}
+
+.successStep{
+  color:#53b43f;
+}
+
+.runningStep{
+  color:#f5c60b;
+}
+
+.pendingStep{
+  color: rgb(196, 191, 191);
+}
+
+.failedStep {
+  color: #f30f0f;
+}
+
+.sucessIcon{
+  color:#53b43f;
+  height:1.5em;
+}
+.green{
+  background:#53b43f;
+}
+
+.red{
+  background:#f30f0f;
+}
+
+.orange{
+  background:#f5c60b;
+}
+
+.header-details-grid {
+  display: flex;
+  align-items: center;
+}
+
+.stepsRight{
+  display: inline-flex;
+  float:right;
+  margin-right: 4%
+}
+
+.logsIcon{
+  width:0.8em!important;
+  height:0.8em!important;
+  cursor: pointer;
+}
+
+.pendingStepIcon{
+  color: white;
+  font-size: 15px!important;
+}
+
+.lds1-hour {
+  display: inline-block;
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  margin-left: -20px;
+  top:4px;
+}
+.m-t-10{
+  margin-top: 10px;
+}
+.infoGrid{
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 85%;
+
+}
+
+@media (max-width: 500px) {
+  .stick-right {
+    margin-right: auto !important;
+  }
+}

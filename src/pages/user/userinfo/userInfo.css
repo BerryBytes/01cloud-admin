@@ -1,0 +1,77 @@
+.rightbtn {
+  float: right;
+}
+
+.projectTitle {
+  display: inline;
+  text-transform: uppercase;
+}
+.projectsTitle {
+  display: inline;
+}
+
+.userProjectsContainer {
+  margin-top: 1.5rem !important;
+  margin-bottom: 1.5rem !important;
+}
+
+.userInfoSquare {
+  height: 3rem !important;
+  width: 2.8rem !important;
+  background-color: #1d6afa !important;
+  border: 1px solid lightgray;
+}
+
+.squareText {
+  margin-top: 0.6rem !important;
+  color: #fff !important;
+}
+
+.userDetailsContainer {
+  display: flex;
+}
+
+.userDetailsSubContainer {
+  margin-left: 1rem;
+  margin-bottom: 0.5rem;
+  width: 20%;
+}
+
+.userId {
+  width: 8%;
+}
+
+.userName {
+  font-weight: 400;
+  color: rgb(52, 52, 61);
+  font-size: 1.05rem;
+}
+
+.userSubDetails {
+  color: #43425d;
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 0.8rem;
+  margin-top: 0.2rem;
+}
+
+.horizontalLine {
+  border-top: 1px solid lightgray;
+}
+
+.containerTitles {
+  color: #555;
+  font-weight: 500;
+}
+
+.topIcon {
+  height: 0.8rem !important;
+  font-size: 1rem !important;
+}
+.marginBtn {
+  margin: auto;
+}
+
+.projectsTable {
+  margin-top: 1rem !important;
+}

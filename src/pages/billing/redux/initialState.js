@@ -1,0 +1,31 @@
+export const initialState = {
+    promoCodesList : null,
+    fetchingPromoCodes: false,
+    promoCodeDetail: null,
+    fetchingPromoCodeDetail: false,
+    addingPromoCode: false,
+    updatingPromoCode: false,
+    deletingPromoCode: false,
+    paymentsList: null,
+    fetchingPaymentsList: false,
+    invoiceList: null,
+    fetchingInvoiceList: false,
+    invoiceData: null,
+    fetchingInvoiceData: false,
+    gatewaysList: null,
+    fetchingGateWaysList: false,
+    gatewayDetail: null,
+    fetchingGateWayDetail: false,
+    addingGateWay: false,
+    updatingGateWay: false,
+    deletingGateWay: false,
+    deductionsList: null,
+    fetchingDeductionsList: false,
+    deductionDetail: null,
+    fetchingDeductionDetail: false,
+    addingDeduction: false,
+    updatingDeduction: false,
+    deletingDeduction: false
+}
+
+export default initialState

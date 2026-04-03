@@ -1,0 +1,70 @@
+.square {
+  height: 3rem !important;
+  width: 3rem !important;
+  background-color: #f6f8fa !important;
+  border: 1px solid lightgray;
+}
+
+.projectIcon {
+  width: inherit !important;
+  height: inherit !important;
+}
+.projecticonImg {
+  object-fit: cover;
+}
+.projectDetailsContainer {
+  display: flex;
+  margin-bottom: 1.5rem;
+}
+
+.projectDetailsSubContainer {
+  margin-left: 1rem;
+  margin-top: 0.5rem;
+  width: 15%;
+}
+
+.projectName {
+  font-weight: 400;
+  color: rgb(52, 52, 61);
+  font-size: 1.05rem;
+}
+
+.projectSubDetails {
+  color: #43425d;
+  opacity: 0.9;
+  font-weight: 400;
+  font-size: 0.9rem;
+}
+
+.tabsContainer {
+  margin-top: 0.5rem !important;
+}
+
+.MuiTab-textColorInherit.Mui-selected {
+  color: #0057fa !important;
+}
+
+.PrivateTabIndicator-colorSecondary-167 {
+  background-color: #0057fa !important;
+}
+
+.horizontalLine {
+  border-top: 1px solid lightgray;
+}
+
+.containerTitles {
+  color: #555;
+  font-weight: 500;
+}
+.topIcon {
+  height: 0.8rem !important;
+  font-size: 1rem !important;
+}
+.marginBtn {
+  margin: auto;
+}
+.thheader th{
+  background: #357dfd;
+  color:white!important;
+
+}

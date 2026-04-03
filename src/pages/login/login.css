@@ -1,0 +1,61 @@
+.normalText {
+  color: grey;
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+}
+
+.forgotPasswordContainer {
+  margin-top: 13px !important;
+}
+
+.loginContainer {
+  margin-top: 20% !important;
+}
+.signup {
+  color: #0057fa;
+}
+.span-or {
+  display: block;
+  position: absolute;
+  left: 50%;
+  top: -7px;
+  margin-left: -25px;
+  background-color: #fff;
+  width: 50px;
+  text-align: center;
+}
+.line-or {
+  width: 100%;
+  position: relative;
+}
+.hr-or {
+  background: #efefef;
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+}
+.authlogo {
+  width: 100px;
+  margin-bottom: 20px;
+  display: none;
+}
+
+.signInButtonDiv {
+  margin-top: 10px !important;
+  text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .authlogo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 955px) {
+  .forgotPasswordContainer {
+    margin-top: 0px !important;
+    text-align: center;
+  }
+  .rememberContainer {
+    text-align: center;
+  }
+}

@@ -1,0 +1,34 @@
+.profilePic{
+	border-radius: 50%;
+}
+
+.userDetaisContainer{
+	margin-left: 0.5rem;
+	flex: 1;
+}
+
+.userRole{
+    background-color: #0057fa!important;
+    color: white!important;
+    float: right;
+}
+
+.userName{
+	color: #555555;
+	font-weight: 600;
+	margin:4px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 150px;
+}
+
+.userEmail{
+	color: grey;
+	margin:4px;
+	font-size: 12px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	max-width: 150px;
+}

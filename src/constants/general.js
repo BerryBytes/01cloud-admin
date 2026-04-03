@@ -1,0 +1,2 @@
+export const RESTAPI_ENDPOINT = window?.config?.REACT_APP_RESTAPI_ENDPOINT
+export const AXIOS_REQUEST_KEY = 'AXIOS_REQUEST'

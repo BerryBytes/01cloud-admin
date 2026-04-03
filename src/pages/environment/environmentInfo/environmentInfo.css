@@ -1,0 +1,21 @@
+.lineChartContainer {
+  padding: 1rem 1rem 0.9rem 0.9rem;
+}
+
+.lineChartTitle {
+  color: grey;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.graphDropdown {
+  min-width: 120px !important;
+}
+
+.graphDropdownContainer{
+    display: flex;
+    justify-content: flex-end;
+}
+.m-t-20{
+    margin-top:20px;
+}

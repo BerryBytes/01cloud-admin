@@ -1,0 +1,18 @@
+const LOADBALANCER_PREFIX = '@LOADBALANCER';
+
+export const GET_LB_LIST = `${LOADBALANCER_PREFIX}/GET_LB_LIST`
+export const GET_LB_LIST_SUCCESS = `${LOADBALANCER_PREFIX}/GET_LB_LIST_SUCCESS`
+export const GET_LB_LIST_FALIURE = `${LOADBALANCER_PREFIX}/GET_LB_LIST_FALIURE`
+
+export const GET_LB_DATA = `${LOADBALANCER_PREFIX}/GET_LB_DATA`
+export const GET_LB_DATA_SUCCESS = `${LOADBALANCER_PREFIX}/GET_LB_DATA_SUCCESS`
+export const GET_LB_DATA_FALIURE = `${LOADBALANCER_PREFIX}/GET_LB_DATA_FALIURE`
+
+export const getLbList = () => ({
+    type: GET_LB_LIST
+})
+
+export const getLbData = (id) => ({
+    type: GET_LB_DATA,
+    id : id
+})

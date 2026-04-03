@@ -1,0 +1,119 @@
+.SubscriptionCard-container{
+	min-height: 214px !important; 
+}
+
+.SubscriptionCard-header{
+	max-width: 100% !important;
+	color: white;
+	background-color: #0057fa;
+	font-weight: bold;
+	border-bottom: 1px solid #B7B9CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50px !important;
+}
+
+.SubscriptionCard-header-disabled{
+	max-width: 100% !important;
+	color: white;
+	background-color: #89acf4;
+	font-weight: bold;
+	border-bottom: 1px solid #B7B9CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 50px !important;
+}
+
+.SubscriptionCard-pricing{
+	max-width: 100% !important;
+	color: white;
+	background-color: #0057fa;
+	border-bottom: 2px solid #B7B9CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px !important;
+}
+
+.SubscriptionCard-pricing-disabled{
+	max-width: 100% !important;
+	color: white;
+	background-color: #f9f6f6;
+	border-bottom: 2px solid #B7B9CB;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 60px !important;
+}
+
+.SubscriptionCard-content {
+	max-width: 100% !important;
+	color: white;
+	background-color: #0057fa;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px !important;
+}
+
+.SubscriptionCard-content-disabled {
+	max-width: 100% !important;
+	color: white;
+	background-color: #f9f6f6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 200px !important;
+}
+
+
+.sc-contentText{
+	color : #B7B9CB;
+	margin-bottom : 12px;
+	margin-top: 0px;
+}
+
+.sc-contentText-disabled{
+	color : #43425D;
+	margin-bottom : 12px;
+	margin-top: 0px;
+}
+
+
+.sc-coreText{
+	color : #B7B9CB;
+	margin-bottom : 12px;
+	margin-top: 6px;
+}
+
+.sc-coreText-disabled{
+	color : #43425D;
+	margin-bottom : 12px;
+	margin-top: 6px;
+}
+
+
+.price{
+	font-size: 20px;
+}
+
+.price-disabled {
+	color:#a6a3ae;
+	font-size: 20px;
+}
+
+.perMonth{
+	font-size: 16px;
+	color: #B7B9CB;
+	position: relative;
+	left: 4%;
+}
+
+.perMonth-disabled{
+	font-size: 16px;
+	color: #43425D;
+	position: relative;
+	left: 4%;
+}

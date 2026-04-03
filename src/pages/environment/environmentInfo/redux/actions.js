@@ -1,0 +1,39 @@
+const ENVIRONMENT_PREFIX = "@ENVIRONMENT";
+
+export const FETCH_ENVIRONMENT_DETAIL = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_DETAIL`;
+export const FETCH_ENVIRONMENT_DETAIL_SUCCESS = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_DETAIL_SUCCESS`;
+export const FETCH_ENVIRONMENT_DETAIL_FAILURE = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_DETAIL_FAILURE`;
+export const FETCH_ENVIRONMENT_INSIGHT = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_INSIGHT`;
+export const FETCH_ENVIRONMENT_INSIGHT_SUCCESS = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_INSIGHT_SUCCESS`;
+export const FETCH_ENVIRONMENT_INSIGHT_FAILURE = `${ENVIRONMENT_PREFIX}/FETCH_ENVIRONMENT_INSIGHT_FAILURE`;
+export const FETCH_ENV_STATE_INITIATE = `${ENVIRONMENT_PREFIX}/FETCH_ENV_STATE_INITIATE`;
+export const FETCH_ENV_STATE = `${ENVIRONMENT_PREFIX}/FETCH_ENV_STATE`;
+export const FETCH_ENV_STATE_SUCCESS = `${ENVIRONMENT_PREFIX}/FETCH_ENV_STATE_SUCCESS`;
+export const UPDATE_BREADCRUMB = "UPDATE_BREADCRUMB";
+
+const fetchEnvDetails = (id) => ({
+  type: FETCH_ENVIRONMENT_DETAIL,
+  data: { id },
+});
+
+const fetchEnvironmentInsights = (id, payload) => ({
+  type: FETCH_ENVIRONMENT_INSIGHT,
+  data: { id, payload },
+});
+
+const fetchEnvironmentStateInitiate = (id) => ({
+  type: FETCH_ENV_STATE_INITIATE,
+  data: { id },
+});
+
+const updateBreadcrumb = (payload) => ({
+  type: UPDATE_BREADCRUMB,
+  data: { payload },
+});
+
+export {
+  fetchEnvironmentInsights,
+  fetchEnvDetails,
+  fetchEnvironmentStateInitiate,
+  updateBreadcrumb,
+};
