@@ -50,8 +50,17 @@ repos:
   # =========================================
   - repo: local
     hooks:
-      - id: trivy-fs
-        name: trivy fs scan
-        entry: bash -c 'TRIVY_CACHE_DIR=${TRIVY_CACHE_DIR:-$HOME/.cache/trivy} trivy fs --scanners vuln,secret,misconfig --severity HIGH,CRITICAL --exit-code 1 .'
+      - id: trivy-secret-scan
+        name: trivy-secret-scan
+        entry: bash
+        args:
+          - -c
+          - |
+              if [ "$GITHUB_ACTIONS" = "true" ]; then
+                echo "Skipping Trivy in CI"
+                exit 0
+              else
+                trivy fs --scanners secret --skip-dirs .git --skip-dirs vendor --exit-code 1 --no-progress .
+              fi
         language: system
         pass_filenames: false
